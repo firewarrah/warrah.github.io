@@ -40,6 +40,7 @@ const viewEvents = () => {
 
 
 const doApi = (_url) => {
+  return new Promise((resolve, reject) => {
   fetch(_url)
   .then(resp => resp.json())
   .then(data => {
@@ -47,4 +48,9 @@ const doApi = (_url) => {
     addTracks(data.data)
     //TODO : funciton from manger of pixa
   })
+  .catch(err =>{
+    reject(err)
+  })
+  })
+
 }
