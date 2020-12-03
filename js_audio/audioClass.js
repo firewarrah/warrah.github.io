@@ -13,18 +13,18 @@ class AudioClass{
       this.render()
     }
    
-    render(){
+ render(){
       let newDiv = document.createElement("div");
-      newDiv.className = "col-lg-6 p-2";
+      newDiv.className = "col-lg-6 col-sm-12 p-2";
       document.querySelector(this.parent).append(newDiv);
   
       newDiv.innerHTML += `
       <div class="music-block m-1 shadow border overflow-hidden">
       <img src="${this.cover}" class="w-50 float-left mr-2" >
-      <h3>${this.title}</h3>
-      <h5>Artist: ${this.artist}</h5>
-      <h5>Album: ${this.album}</h5>
-      <h6>Rank: ${this.rank}</h6>
+      <h4>${this.title}</h4>
+      <h6>Artist: ${this.artist}</h6>
+      <h6>Album: ${this.album}</h6>
+      <p>Rank: ${this.rank}</p>
      
       <audio controls class="w-100" style="margin: 1em 0; box-sizing: border-box;"
             src="${this.preview}"></audio>  <div>
