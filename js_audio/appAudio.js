@@ -32,7 +32,7 @@ const addEvents = (input, button) =>{
 }
 // אמור להיות בקובץ נפרד
 const viewEvents = () => {
-  let input = document.querySelector("#id_input");
+  let input = document.querySelector("#id_search");
   let button = document.getElementById("btn_search");
   addEvents(input, button);
 }
