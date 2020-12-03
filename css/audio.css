@@ -1,4 +1,26 @@
+body {
+    background-color: #f4f4f4;
+}
+
 .music-block {
     background-color: #e8e8e8;
     border-radius: 0.8em;
+}
+
+header {
+    background-image: url("../img/header-cover2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 19em;
+    background-position: center center;
+}
+
+h1 {
+    color: #e1e1e1;
+    font-size: 3em;
+    text-shadow: 2px 3px 7px black;
+}
+
+nav {
+    background-image: url("../img/bg-nav.jpg");
 }
