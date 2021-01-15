@@ -73,7 +73,7 @@ const doApi = (_url) => {
   fetch(_url)
   .then((resp) => resp.json())
   .then(data => {
-    let checkIfEmpty = Object.keys(data.data).length === 0 && data.data.value.constructor === Object;
+    let checkIfEmpty = Object.keys(data.data).length === 0;
     if(!checkIfEmpty){
          addTracks(data.data)  
     }
