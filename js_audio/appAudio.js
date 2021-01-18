@@ -13,7 +13,7 @@ const init = () => {
 
 function validateInput(input) {
   let hasError = false;
-  const searchReg = /^[\u0400-\u04FF\u0590-\u05fea-zA-Z0-9- _]+$/;
+  const searchReg = /^[\u0400-\u04FF\u0590-\u05fea-zA-Z0-9- _']+$/;
   document.getElementById("id_row").innerHTML = "";
  console.log(!searchReg.test(input.value));
   if(input.value == ""){
